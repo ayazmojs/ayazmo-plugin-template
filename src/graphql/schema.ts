@@ -10,5 +10,4 @@ const schema = `
   }
 `;
 
-// Export the schema
-module.exports = schema;
+export default schema;

@@ -1,6 +1,7 @@
 export default class PetsService {
-  private config: any;
-  private db: any;
+  // This is example. You can remove this class.
+  // private config: any;
+  // private db: any;
 
   constructor(container, options) {
     // get the config service from the DI container
