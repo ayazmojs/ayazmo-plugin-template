@@ -8,6 +8,6 @@
   "rootDir": "src",
   "type": "module",
   "dependencies": {
-    "@ayazmo/types": "^0.1.0"
+    "@mikro-orm/core": "^6.0.2"
   }
 }

@@ -1,25 +1,25 @@
-export default class PetsService {
-  // This is example. You can remove this class.
-  // private config: any;
-  // private db: any;
+/**
+ * Defining Service - Example Template
+ *
+ * This is a template service for Ayazmo framework.
+ * Developers can use this as a starting point to create custom servies.
+ * Feel free to modify, expand, or replace this template according to your application's needs.
+ */
 
-  constructor(container, options) {
-    // get the config service from the DI container
-    //this.config = container.config;
 
-    // get the database connection from the DI container
-    //this.db = container.db.em;
-  }
+// import { BaseService } from '@ayazmo/core';
+// import { EntityRepository } from '@mikro-orm/core';
 
-  async getAll() {
-    // get pets entity from the DI container
-    // const petsModel = this.db.getRepository('User')
-    // await petsModel.findOne({ id: 1})
+// export default class PetsService {
+//   private petEntity: EntityRepository<Object>;
 
-    return [
-      { name: 'dog' },
-      { name: 'cat' },
-      { name: 'mouse' }
-    ];
-  }
-}
+//   constructor(container, pluginOptions) {
+//     this.petEntity = this.getEntity('Pet');
+//   }
+
+//   async getAll() {
+//     const comments = this.getService('commentService').getAll();
+//     const pets = await this.petEntity.find({});
+//     return pets;
+//   }
+// }
