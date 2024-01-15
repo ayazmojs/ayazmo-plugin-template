@@ -1,10 +1,10 @@
-import { AyazmoRouteOptions, AyazmoRequest, AyazmoReply } from '@ayazmo/types';
+import { AyazmoRouteOptions, AyazmoInstance } from '@ayazmo/types';
 
-const routes: AyazmoRouteOptions[] = [
+const routes = (app: AyazmoInstance): AyazmoRouteOptions[] => [
   {
     method: 'GET',
     url: '/pets',
-    handler: async (request: AyazmoRequest, reply: AyazmoReply) => {
+    handler: async (request, reply) => {
 
       // get the user service from the DI container
       const petsService = request.diScope.resolve('petsService');
