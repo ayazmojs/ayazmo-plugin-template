@@ -2,7 +2,6 @@
 const schema = `
   type Dog {
     name: String!
-    owner: Human
   }
 
   extend type Query {

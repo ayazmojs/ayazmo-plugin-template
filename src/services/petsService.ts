@@ -7,19 +7,20 @@
  */
 
 
-// import { BaseService } from '@ayazmo/core';
+import { BaseService } from '@ayazmo/core';
 // import { EntityRepository } from '@mikro-orm/core';
 
-// export default class PetsService {
-//   private petEntity: EntityRepository<Object>;
+export default class PetsService extends BaseService {
+  // private petEntity: EntityRepository<Object>;
 
-//   constructor(container, pluginOptions) {
-//     this.petEntity = this.getEntity('Pet');
-//   }
+  constructor(container, pluginOptions) {
+    super(container, pluginOptions);
+    // this.petEntity = this.getEntity('Pet');
+  }
 
-//   async getAll() {
-//     const comments = this.getService('commentService').getAll();
-//     const pets = await this.petEntity.find({});
-//     return pets;
-//   }
-// }
+  async getAll() {
+    // const comments = this.getService('commentService').getAll();
+    const pets = ['cat', 'dog'];
+    return pets;
+  }
+}
