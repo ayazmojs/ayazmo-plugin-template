@@ -7,10 +7,10 @@
  */
 
 
-import { BaseService } from '@ayazmo/core';
-// import { EntityRepository } from '@mikro-orm/core';
+import { BasePluginService } from '@ayazmo/core';
+// import { EntityRepository } from '@ayazmo/utils';
 
-export default class PetsService extends BaseService {
+export default class PetsService extends BasePluginService {
   // private petEntity: EntityRepository<Object>;
 
   constructor(container, pluginOptions) {
