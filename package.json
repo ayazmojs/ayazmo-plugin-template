@@ -7,6 +7,9 @@
   "license": "MIT",
   "rootDir": "src",
   "type": "module",
+  "keywords": [
+    "ayazmo-plugin-template"
+  ],
   "files": [
     "dist"
   ],
