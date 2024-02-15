@@ -14,8 +14,9 @@
     "dist"
   ],
   "dependencies": {
-    "@ayazmo/core": "^0.1.0",
-    "@ayazmo/types": "^0.1.0"
+    "@ayazmo/core": "^0.1.6",
+    "@ayazmo/types": "^0.1.4",
+    "@ayazmo/utils": "^0.1.6"
   },
   "scripts": {
     "build": "tsc --build"
