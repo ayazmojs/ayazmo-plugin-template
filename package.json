@@ -20,5 +20,8 @@
   },
   "scripts": {
     "build": "tsc --build"
+  },
+  "devDependencies": {
+    "ayazmo": "^0.1.6"
   }
 }
