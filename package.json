@@ -1,9 +1,9 @@
 {
   "name": "ayazmo-plugin-template",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Ayazmo plugin template",
   "exports": "./dist/index.js",
-  "author": "ayazmojs",
+  "author": "ayazmo.io",
   "license": "MIT",
   "rootDir": "src",
   "type": "module",
@@ -14,14 +14,14 @@
     "dist"
   ],
   "dependencies": {
-    "@ayazmo/core": "^0.1.6",
-    "@ayazmo/types": "^0.1.4",
-    "@ayazmo/utils": "^0.1.6"
+    "@ayazmo/core": "^0.1.15",
+    "@ayazmo/types": "^0.1.11",
+    "@ayazmo/utils": "^0.1.13"
   },
   "scripts": {
     "build": "tsc --build"
   },
   "devDependencies": {
-    "ayazmo": "^0.1.6"
+    "ayazmo": "^0.1.8"
   }
 }
