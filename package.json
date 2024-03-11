@@ -1,6 +1,6 @@
 {
   "name": "ayazmo-plugin-template",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Ayazmo plugin template",
   "exports": "./dist/index.js",
   "author": "ayazmo.io",
@@ -22,6 +22,7 @@
     "build": "tsc --build"
   },
   "devDependencies": {
-    "ayazmo": "^0.1.8"
+    "ayazmo": "^0.1.16",
+    "typescript": "^5.4.2"
   }
 }
