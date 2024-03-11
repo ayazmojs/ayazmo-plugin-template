@@ -1,4 +1,5 @@
-import { Entity, PrimaryKey, Property } from '@ayazmo/types';
+import { Entity, Property } from '@ayazmo/types';
+import { BaseEntity } from '@ayazmo/core';
 
 /**
  * Defining Entity - Example Template
@@ -10,10 +11,7 @@ import { Entity, PrimaryKey, Property } from '@ayazmo/types';
  */
 
 @Entity()
-export class Pet {
-
-  @PrimaryKey()
-  id!: number;
+export default class Pet extends BaseEntity {
 
   @Property()
   name!: string;
@@ -21,28 +19,11 @@ export class Pet {
   @Property()
   type!: string; // e.g., 'Dog', 'Cat'
 
-  @Property({ nullable: true })
-  breed?: string;
-
-  @Property()
-  age!: number;
-
-  @Property({ type: 'text', nullable: true })
-  bio?: string;
-
-  @Property({ onCreate: () => new Date() })
-  createdAt: Date = new Date();
-
-  @Property({ onUpdate: () => new Date(), nullable: true })
-  updatedAt: Date = new Date();
-
   // Additional properties or relations can be added here as per your requirements
 
-  constructor(name: string, type: string, age: number, breed?: string, bio?: string) {
+  constructor(name: string, type: string) {
+    super();
     this.name = name;
     this.type = type;
-    this.age = age;
-    this.breed = breed;
-    this.bio = bio;
   }
 }
