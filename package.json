@@ -1,6 +1,6 @@
 {
   "name": "ayazmo-plugin-template",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Ayazmo plugin template",
   "exports": "./dist/index.js",
   "author": "ayazmo.io",
@@ -19,10 +19,11 @@
     "@ayazmo/utils": "^0.1.13"
   },
   "scripts": {
-    "build": "tsc --build"
+    "build": "rimraf dist && tsc --build"
   },
   "devDependencies": {
     "ayazmo": "^0.1.16",
-    "typescript": "^5.4.2"
+    "typescript": "^5.4.2",
+    "rimraf": "^5.0.5"
   }
 }
