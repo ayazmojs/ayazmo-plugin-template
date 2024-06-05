@@ -11,11 +11,11 @@ import { BasePluginService } from '@ayazmo/core';
 // import { EntityRepository } from '@ayazmo/utils';
 
 export default class PetsService extends BasePluginService {
-  // private petEntity: EntityRepository<Object>;
+  // private petRepository: EntityRepository<Object>;
 
   constructor(container, pluginOptions) {
     super(container, pluginOptions);
-    // this.petEntity = this.getEntity('Pet');
+    // this.petRepository = this.getRepository('Pet');
   }
 
   async getAll() {

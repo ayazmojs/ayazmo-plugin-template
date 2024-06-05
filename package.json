@@ -1,12 +1,13 @@
 {
   "name": "ayazmo-plugin-template",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Ayazmo plugin template",
   "exports": "./dist/index.js",
   "author": "ayazmo.io",
   "license": "MIT",
   "rootDir": "src",
   "type": "module",
+  "sideEffects": false,
   "keywords": [
     "ayazmo-plugin-template"
   ],
@@ -14,15 +15,15 @@
     "dist"
   ],
   "dependencies": {
-    "@ayazmo/core": "^0.1.15",
-    "@ayazmo/types": "^0.1.11",
-    "@ayazmo/utils": "^0.1.13"
+    "@ayazmo/core": "^0.1.21",
+    "@ayazmo/types": "^0.1.21",
+    "@ayazmo/utils": "^0.1.21"
   },
   "scripts": {
     "build": "rimraf dist && tsc --build"
   },
   "devDependencies": {
-    "ayazmo": "^0.1.16",
+    "ayazmo": "^0.1.21",
     "typescript": "^5.4.2",
     "rimraf": "^5.0.5"
   }
