@@ -1,6 +1,6 @@
 {
   "name": "ayazmo-plugin-template",
-  "version": "0.1.5",
+  "version": "0.0.1",
   "description": "Ayazmo plugin template",
   "exports": "./dist/index.js",
   "author": "ayazmo.io",
@@ -15,12 +15,18 @@
     "dist"
   ],
   "dependencies": {
-    "@ayazmo/core": "^0.1.21",
-    "@ayazmo/types": "^0.1.21",
-    "@ayazmo/utils": "^0.1.21"
+    "@ayazmo/core": "^0.1.23",
+    "@ayazmo/types": "^0.1.23",
+    "@ayazmo/utils": "^0.1.23",
+    "@changesets/cli": "^2.27.7",
+    "@changesets/changelog-github": "^0.5.0"
   },
   "scripts": {
-    "build": "rimraf dist && tsc --build"
+    "build": "rimraf dist && tsc --build",
+    "watch": "tsc --watch",
+    "version": "changeset version",
+    "publish": "changeset publish",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
     "ayazmo": "^0.1.21",
