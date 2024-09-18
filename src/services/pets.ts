@@ -8,14 +8,14 @@
 
 
 import { BasePluginService } from '@ayazmo/core';
-import { AyazmoContainer, PluginConfig } from '@ayazmo/types';
+import { AyazmoInstance, PluginConfig } from '@ayazmo/types';
 // import { EntityRepository } from '@ayazmo/utils';
 
 export default class PetsService extends BasePluginService {
   // private petRepository: EntityRepository<Object>;
 
-  constructor(container: AyazmoContainer, pluginOptions: PluginConfig) {
-    super(container, pluginOptions);
+  constructor(app: AyazmoInstance, pluginOptions: PluginConfig) {
+    super(app, pluginOptions);
     // this.petRepository = this.getRepository('Pet');
   }
 
