@@ -36,7 +36,7 @@
     "ayazmo": "^0.3.0"
   },
   "engines": {
-    "node": ">=20.0.0"
+    "node": ">=20.5.0"
   },
   "publishConfig": {
     "access": "public"
